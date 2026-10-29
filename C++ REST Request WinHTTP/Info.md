@@ -1,7 +1,4 @@
-﻿from pathlib import Path
-
-content = r"""# C++ REST API Client Using Native Windows WinHTTP
-## Interview Preparation Guide
+﻿## Interview Preparation Guide
 
 **Goal:** Explain and demonstrate how to call REST endpoints from C++ on Windows without a third-party HTTP library.
 
