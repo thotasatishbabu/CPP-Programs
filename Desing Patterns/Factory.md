@@ -1,6 +1,4 @@
-from pathlib import Path
-
-content = r"""# C++ Factory Design Pattern — Senior Interview Guide (15 Years' Experience)
+# C++ Factory Design Pattern â€” Senior Interview Guide (15 Years' Experience)
 
 ## 1. Definition
 
@@ -85,7 +83,7 @@ int main()
 - Define ownership. The original function returns a raw owning pointer, so the caller must remember to `delete` it. Prefer `std::unique_ptr`.
 - Use `override` on derived virtual methods to catch signature mistakes.
 - Use `const std::string&` to avoid copying the input string.
-- Consider whether the example is a simple factory function or the formal **Factory Method** pattern. The term “Factory Pattern” is often used broadly, but these are distinct patterns.
+- Consider whether the example is a simple factory function or the formal **Factory Method** pattern. The term â€œFactory Patternâ€ is often used broadly, but these are distinct patterns.
 
 ---
 
@@ -431,7 +429,7 @@ int main()
 
 ---
 
-## 9. Abstract Factory example — concept
+## 9. Abstract Factory example â€” concept
 
 Imagine supporting two UI themes/platforms:
 
@@ -499,7 +497,7 @@ Use Abstract Factory when the application needs **families of related products**
 
 > I use the Factory Pattern to separate object construction from business usage. The client depends on a stable abstraction, while the factory encapsulates the concrete creation decision and ownership contract. For a small, fixed set of types, a simple factory function is clear and sufficient. When the system needs product families, subclass-specific creation, or runtime extensibility, I choose Abstract Factory, Factory Method, or a registry-based design based on the actual requirement. In modern C++, I prefer smart-pointer ownership and explicit error handling, and I keep the factory focused so it does not become a central dependency bottleneck.
 
-**At 15 years of experience:** Interviewers expect you to explain the pattern's intent, precise variant, ownership and lifetime, extensibility, testing, concurrency, ABI/plugin concerns, and trade-offs—not just write an `if/else` that returns `new`.
+**At 15 years of experience:** Interviewers expect you to explain the pattern's intent, precise variant, ownership and lifetime, extensibility, testing, concurrency, ABI/plugin concerns, and trade-offsâ€”not just write an `if/else` that returns `new`.
 """
 path = Path("/mnt/data/Cpp_Factory_Pattern_Senior_Interview_Guide.md")
 path.write_text(content, encoding="utf-8")
