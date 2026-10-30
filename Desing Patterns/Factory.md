@@ -499,6 +499,3 @@ Use Abstract Factory when the application needs **families of related products**
 
 **At 15 years of experience:** Interviewers expect you to explain the pattern's intent, precise variant, ownership and lifetime, extensibility, testing, concurrency, ABI/plugin concerns, and trade-offs—not just write an `if/else` that returns `new`.
 """
-path = Path("/mnt/data/Cpp_Factory_Pattern_Senior_Interview_Guide.md")
-path.write_text(content, encoding="utf-8")
-print(f"Created: {path}\nSize: {path.stat().st_size:,} bytes")
